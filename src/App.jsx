@@ -1,23 +1,20 @@
-import { Counter } from './components/Counter'
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import HomeRoutes from "@/routes/HomeRoutes";
 
 function App() {
-  
-
   return (
-    <div className="App">
-      <header className="App-header">
+    <BrowserRouter>
+      <div>
         <Header />
-        <Counter msg='Hello Counter' />
-      </header>
-
-      <footer>
+        <HomeRoutes />
         <Footer />
-      </footer>
-    </div>
-  )
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

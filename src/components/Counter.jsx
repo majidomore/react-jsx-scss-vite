@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react'
 
-export const Counter = ({msg=""}) => {
+const Counter = ({msg=""}) => {
     const [count, setCount] = useState(0);
     return  (
        <div>
@@ -14,3 +14,5 @@ export const Counter = ({msg=""}) => {
         </div>
     )
 }
+
+export default Counter;
